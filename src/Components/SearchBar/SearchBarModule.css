@@ -1,0 +1,72 @@
+.SearchBar{
+    display: flex;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+    color: white;
+    }
+
+    .sortBy ul {
+        display:flex;
+        justify-content: center;
+        margin-bottom: 2.22rem;
+    }
+    .sortBy li {
+        cursor: pointer;
+        width: 4.33rem;
+        border-bottom: 0.7px solid white;
+        padding: 0 2.58rem 0.33rem 2.58rem;
+        line-height: 1.13;
+        text-align: center;
+        font-weight: 600;
+        font-size:0.83rem;
+        list-style: none;
+        transition: color 0.25s;
+    }
+    .sortBy li:hover{
+        color:#f5f2b1;
+    }
+
+    .sortBy li.active,
+.sortBy li.active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
+    .condition {
+        display:flex;
+        justify-content: center;
+        margin-bottom: 2.88rem;
+    }
+    .condition input {
+        width:21rem;
+        padding: 0.66rem 1rem;
+        margin-right: 2.22rem;
+        border-radius: 10px;
+        font-size: 0.77rem;
+        font-weight: 500;
+    }
+    .condition input:last-child {
+        margin-right: 0;
+      }
+    .submitButton{
+        text-align: center;
+    }
+    .submitButton button{
+        border-radius: 4px;
+        padding: 0.72rem 1.7rem;
+        background-color: burlywood;
+        color: white;
+        font-weight: 600;
+        border : 0.3px solid black;
+    }
+    .submitButton button:hover{
+        cursor: pointer;
+        background-color: rgb(199, 166, 123);
+    }
+
+    
