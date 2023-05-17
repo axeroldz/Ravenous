@@ -3,7 +3,8 @@ const baseURL = 'https://api.yelp.com/v3/businesses/search?'
 const options = {
     headers : {
         Authorization: `Bearer ${apiKey}`
-    }
+    },
+    mode: 'no-cors'
 }
 const yelpApi = (term,loc,sortBy) =>{
         return fetch(`${baseURL}term=${term}&location=${loc}&sort_by=${sortBy}`,options)
