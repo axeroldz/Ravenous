@@ -13,7 +13,8 @@ const SearchBar = ({searchYelp}) =>{
     const [sortByOpt,setSortByOpt] = useState("best_match");
     useEffect(()=>{
         searchYelp(term,loc,sortByOpt);
-    },[loc, searchYelp, sortByOpt, term]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[sortByOpt]);
     const getSortByClass = (option) =>{
         if(sortByOpt === option)
             return 'active';
